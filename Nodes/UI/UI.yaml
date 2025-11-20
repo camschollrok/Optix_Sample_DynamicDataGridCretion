@@ -172,13 +172,28 @@ Children:
     Children:
     - Name: Default
       Type: CheckBoxStyle
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
 - Name: NativePresentationEngine
   Type: NativePresentationEngine
   ReferenceType: HasOrderedComponent
   Children:
-  - Name: EnableVirtualKeyboard
+  - Name: VirtualKeyboard
     Type: BaseDataVariableType
-    DataType: Boolean
+    DataType: VirtualKeyboardEngineTypeEnum
   - Name: StartWindow
     Type: NodePointer
     DataType: NodeId
@@ -315,6 +330,12 @@ Children:
       DataType: Duration
       ModellingRule: Optional
       Value: "0:00:00:01.0000000"
+    - Name: SortColumn
+      Type: BaseDataVariableType
+      DataType: NodeId
+    - Name: SortOrder
+      Type: BaseDataVariableType
+      DataType: SortOrderEnum
   - Name: DataGridCreator
     Type: NetLogic
     Children:
@@ -423,6 +444,11 @@ Children:
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
+    - Name: BackgroundColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#e70707"
   - Name: Button2
     Type: Button
     Children:
@@ -804,3 +830,4 @@ Children:
           Type: PropertyType
           DataType: UInt16
 - File: Screens/Screens.yaml
+- File: Keyboards/Keyboards.yaml

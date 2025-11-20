@@ -102,6 +102,10 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: DataLogger2
   Type: DataLogger
   Children:
@@ -203,6 +207,10 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: DataLogger3
   Type: DataLogger
   Children:
@@ -304,6 +312,10 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: DataLogger4
   Type: DataLogger
   Children:
@@ -455,6 +467,10 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: DataLogger5
   Type: DataLogger
   Children:
@@ -581,3 +597,7 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
